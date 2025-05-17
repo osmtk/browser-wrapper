@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 DEFAULT_BROWSER = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
-DEFAULT_ARGS = ["--remote-debugging-port=12345"]
+DEFAULT_ARGS = ["--remote-debugging-port=12345", r"--user-data-dir=C:\BrowserWrapper\UserData"]
 
 config_path = Path(sys.executable).parent / "config.json"
 if config_path.exists():
